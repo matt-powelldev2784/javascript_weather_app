@@ -1,4 +1,5 @@
 node_modules
 .vscode
+.gitignore
 .prettierrc
 git_npm_notes.txt
