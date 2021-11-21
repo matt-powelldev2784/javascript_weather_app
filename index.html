@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer type="module" src="main.js"></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__logo-box"></div>
+    </header>
+
+    <main class="main">
+      <form id="DEForm" class="search__form">
+        <input
+          type="text"
+          placeholder="Type Post Code OR City and Country to get weather"
+          autocomplete="on"
+          class="search__input"
+          autofocus
+        />
+      </form>
+
+      <section class="container">
+        <div class="row" id="weather_render"></div>
+        <div class="end"><br /></div>
+      </section>
+    </main>
+  </body>
+</html>

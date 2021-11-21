@@ -1,0 +1,236 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+@media (min-device-width: 420px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    /*font-size: 16px;*/
+    line-height: 1.7;
+    color: rgb(75, 74, 74);
+    box-sizing: border-box;
+  }
+
+  .header {
+    height: 100vh;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(8, 92, 248, 0.5),
+        rgba(255, 255, 255, 0.9)
+      ),
+      url(img/clouds.jpg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    background-color: rgb(85, 190, 252);
+  }
+
+  .main {
+    top: 3rem;
+    width: 100%;
+    height: 20rem;
+    visibility: '';
+  }
+
+  .search__form {
+    position: absolute;
+    top: 10rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 1rem;
+    background-color: rgba(8, 92, 248, 0.5);
+    visibility: '';
+  }
+
+  .search__input {
+    margin: 2rem;
+    width: 35rem;
+    height: 3rem;
+    border: 0;
+    padding: 2rem;
+    border-radius: 7% 10% 10% 5% / 10% 47% 10% 37%;
+    outline: none;
+    text-align: center;
+  }
+
+  .container {
+    position: absolute;
+    top: 18rem;
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+  }
+
+  .error {
+    position: absolute;
+    top: 21rem;
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 340px));
+    grid-template-rows: repeat(auto-fit, minmax(200px, 340px));
+    gap: 2% 2%;
+    visibility: hidden;
+  }
+
+  [class$='col'] {
+    background-color: rgba(8, 92, 248, 0.5);
+    padding: 0.5rem;
+    float: left;
+    min-width: 12rem;
+    margin: 1rem;
+    color: white;
+    font-size: 2rem;
+  }
+
+  [class$='day'] {
+    text-align: center;
+    font-size: 1.8rem;
+    color: white;
+  }
+
+  [class$='title'] {
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+  }
+}
+
+/*
+/////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////
+
+*/
+
+@media (max-device-width: 420px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    /*font-size: 16px;*/
+    line-height: 1.7;
+    color: rgb(75, 74, 74);
+    box-sizing: border-box;
+  }
+
+  .header {
+    height: 100vh;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(8, 92, 248, 0.5),
+        rgba(255, 255, 255, 0.9)
+      ),
+      url(img/cloudsmob.jpg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    background-color: rgb(85, 190, 252);
+  }
+
+  .main {
+    position: absolute;
+    top: 0rem;
+    width: 100%;
+    height: 100%;
+    visibility: '';
+  }
+
+  .search__form {
+    width: 100%;
+    text-align: center;
+    visibility: '';
+  }
+
+  .search__input {
+    margin-top: 4rem;
+    width: 90%;
+    border-radius: 7% 10% 10% 5% / 10% 47% 10% 37%;
+    font-size: 6rem;
+    text-align: center;
+    padding: 3rem;
+    border: 0;
+  }
+
+  .container {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 700;
+  }
+
+  .error1 {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 700;
+    color: rgb(75, 74, 74);
+  }
+
+  .title1 {
+    position: relative;
+    top: 2rem;
+    width: 100%;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 700;
+    color: rgb(75, 74, 74);
+  }
+
+  .row {
+    position: relative;
+    top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 340px));
+    grid-template-rows: repeat(auto-fit, minmax(200px, 340px));
+    gap: 2% 2%;
+    visibility: visible;
+  }
+
+  [class$='col'] {
+    background-color: rgba(8, 92, 248, 0.5);
+    width: 100%;
+    margin: 0.5rem;
+    font-size: 5rem;
+    color: white;
+  }
+
+  [class$='day'] {
+    text-align: center;
+    font-size: 5rem;
+    color: white;
+  }
+
+  .icon {
+    width: 20%;
+  }
+
+  .btn {
+    visibility: hidden;
+  }
+}

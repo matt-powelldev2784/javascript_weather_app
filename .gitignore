@@ -1,0 +1,4 @@
+node_modules
+.vscode
+.prettierrc
+git_npm_notes.txt
