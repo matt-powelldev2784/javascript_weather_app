@@ -20,7 +20,7 @@ const getGeoLocation = async address => {
 
     //catch errors
   } catch (error) {
-    renderError('Error getting locaton. Please try again');
+    renderError('Error getting locaton. Please type valid location.');
     return;
   }
 };
