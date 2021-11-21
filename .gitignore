@@ -1,6 +1,3 @@
 node_modules
-.netlify
-.vscode
-.gitignore
-.prettierrc
+.*
 git_npm_notes.txt
